@@ -33,8 +33,8 @@ const UserPlaces = props => {
     ];
     const loadedPlaces = DUMMY_PLACES.filter(place => place.creator === userId);
     return (
-        <div class="row">
-            <div class="col-6 offset-3">
+        <div className="row">
+            <div className="col-6 offset-3">
                 <PlaceList items={loadedPlaces} />
             </div>
         </div>
