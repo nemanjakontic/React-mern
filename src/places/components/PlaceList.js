@@ -2,6 +2,7 @@ import React from "react";
 
 import Card from "../../shared/components/UIElements/Card";
 import PlaceItem from "./PlaceItem";
+import {Link} from "react-router-dom";
 
 const PlaceList = props => {
     if (props.items.length === 0) {
@@ -9,7 +10,7 @@ const PlaceList = props => {
             <div>
                 <Card>
                     <h2>No places found. Mayde create one?</h2>
-                    <button>Share place</button>
+                    <Link to="/places/new"><button className="btn btn-primary">Share place</button></Link>
                 </Card>
             </div>
         );

@@ -8,7 +8,7 @@ import {useForm} from "../../shared/hooks/form-hook";
 const DUMMY_PLACES = [
     {
         id: 'p1',
-        title: 'Empire State Building',
+        title: 'Empire State Buildiiiiiiiiing',
         description: 'One of the most famous buildings',
         imageURL: 'https://images.unsplash.com/photo-1588501302208-26ca3e841c18?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
         address: 'Kneza Milosa 15',
@@ -20,7 +20,7 @@ const DUMMY_PLACES = [
     },
     {
         id: 'p2',
-        title: 'Empire State Building',
+        title: 'Empire State Buildingsssssss',
         description: 'One of the most famous buildings',
         imageURL: 'https://images.unsplash.com/photo-1588501302208-26ca3e841c18?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
         address: 'Kneza Milosa 15',
@@ -50,16 +50,18 @@ const UpdatePlace = props => {
     const identifiedPlace = DUMMY_PLACES.find(p => p.id === placeId);
 
     useEffect(() => {
-        setFormData({
-            title: {
-                value: identifiedPlace.title,
-                isValid: true
-            },
-            description: {
-                value: identifiedPlace.description,
-                isValid: false
-            }
-        }, true);
+        if(identifiedPlace) {
+            setFormData({
+                title: {
+                    value: identifiedPlace.title,
+                    isValid: true
+                },
+                description: {
+                    value: identifiedPlace.description,
+                    isValid: false
+                }
+            }, true);
+        }
         setIsloading(false);
     }, [setFormData, identifiedPlace]);
 

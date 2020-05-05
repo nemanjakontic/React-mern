@@ -9,7 +9,7 @@ const UserPlaces = props => {
         {
             id: 'p1',
             title: 'Empire State Building',
-            description: 'One of the most famous buildings',
+            description: 'One of the most famous buildingsssss',
             imageURL: 'https://images.unsplash.com/photo-1588501302208-26ca3e841c18?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
             address: 'Kneza Milosa 15',
             location: {
@@ -20,7 +20,7 @@ const UserPlaces = props => {
         },
         {
             id: 'p2',
-            title: 'Empire State Building',
+            title: 'Emp. State Building',
             description: 'One of the most famous buildings',
             imageURL: 'https://images.unsplash.com/photo-1588501302208-26ca3e841c18?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
             address: 'Kneza Milosa 15',
